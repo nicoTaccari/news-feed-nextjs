@@ -1,16 +1,19 @@
 import Header from "./Header";
-
-const layoutStyle = {
-  margin: 20,
-  padding: 20,
-  border: "1px solid #DDD"
-};
+import Head from "next/head";
 
 export default function Layout(props) {
   return (
-    <div style={layoutStyle}>
+    <>
+      <Head>
+        <meta name="viewport" content="initial-scale=1.0, width=device-width" />
+
+        <script
+          defer
+          src="https://use.fontawesome.com/releases/v5.3.1/js/all.js"
+        ></script>
+      </Head>
       <Header />
       {props.children}
-    </div>
+    </>
   );
 }
