@@ -1,7 +1,6 @@
 import Layout from "../../components/Layout";
 import News from "../../components/News";
 import { Component } from "react";
-import WithPaginator from "../../HOCs/WithPaginator";
 
 const BASE_URL = "https://api.canillitapp.com";
 
